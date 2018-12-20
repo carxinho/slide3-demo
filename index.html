@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>一个无缝轮播demo</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://at.alicdn.com/t/font_974934_qmred8428wp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+                <span class="previous" id="previous">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-jiantou-copy"></use>
+                        </svg>
+                    </span>
+            <div class="window">
+                <div id="slides" class="images">
+                    <img src="./image/yellow.jpg" alt="yellow flower">
+                    <img src="./image/red.jpg" alt="red moon">
+                    <img src="./image/blue.jpg" alt="blue;s">
+                    <img src="./image/white.jpg" alt="white wind">
+                </div>
+            </div>
+            <div class="next" id="next">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-jiantou"></use>
+                    </svg>
+                </div>
+        </div>
+        <div class="buttonWrapper" id="buttonWrapper">
+            <button>
+                <img src="./image/yellow.jpg" alt="yellow flower">
+            </button>
+            <button>
+                <img src="./image/red.jpg" alt="red moon">
+            </button>
+            <button>
+                <img src="./image/blue.jpg" alt="blue;s">
+            </button>
+            <button>
+                <img src="./image/white.jpg" alt="white wind">
+            </button>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
